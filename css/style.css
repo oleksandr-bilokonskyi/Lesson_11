@@ -1,0 +1,198 @@
+.page {
+   max-width: 1230px;
+   margin: 0 auto;
+}
+
+[class*="__container"] {
+   max-width: 800px;
+}
+
+body{
+   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.wrapper{
+   position: relative;
+   overflow: hidden;
+   min-height: 100%;
+}
+
+.header{
+   position: fixed;
+   width: 100%;
+   top: 0;
+   left: 0;
+   background-color: yellowgreen;
+   z-index: 100;
+   padding: 30px;
+   text-align: center;
+   font-weight: bold;
+   font-size: 20px;
+   color: rgb(255, 255, 255);
+}
+.header__container {
+}
+.header__menu {
+}
+.menu {
+   font-size: 0;
+}
+.menu__item {
+   position: relative;
+   display: inline-block;
+}
+.menu__item:not(:last-child){
+   margin-right: 10px;
+}
+.menu__item:hover .sub-menu{
+   opacity: 1;
+   visibility: visible;
+   top: 100%;
+}
+
+.menu__link {
+   color: rgb(255, 255, 255);
+   font-size: 16px;
+   display: inline-block;
+   padding: 5px 0;
+}
+.sub-menu {
+   position: absolute;
+   top: 180%;
+   left: 0;
+   min-width: 150px;
+   background-color: gray;
+   padding: 10px;
+   opacity: 0;
+   visibility: hidden;
+   transition: all 0.3s ease 0s;
+}
+.sub-menu__item {
+}
+.sub-menu__item:not(:last-child){
+   margin-bottom: 10px;
+}
+.sub-menu__link {
+   font-size: 16px;
+}
+
+
+.items {
+   margin: 50px;
+   padding-top: 200px;
+}
+.items__item {
+   padding: 20px;
+   margin: 2px;
+   text-align: center;
+   font-weight: bold;
+   font-size: 25px;
+   color: white;
+   line-height: 1.5;
+   border: 2px solid black;
+   border-radius: 10px;
+   position: relative;
+}
+.items__item--bg-brown {
+   background-color: brown;
+   z-index: 2;
+}
+.items__item--bg-purple {
+   background-color: purple;
+   top: 25px;
+   left: 15px;
+   z-index: 1;
+}
+.items__item--bg-green {
+   background-color: green;
+   z-index: 0;
+}
+.section{
+   background-color: #eee;
+   padding: 150px;
+   position: relative;
+   height: 1000px;
+}
+.items-2 {
+}
+
+.items-2__item {
+   padding: 20px;
+   text-align: center;
+   font-weight: bold;
+   font-size: 25px;
+   color: white;
+   line-height: 1.5;
+}
+.items-2__item--bg-brown {
+   background-color: brown;
+}
+.items-2__item--bg-purple {
+   background-color: purple;
+   position: fixed;
+   top: 0;
+   left: 0;
+}
+.items-2__item--bg-green {
+   background-color: green;
+}
+
+.list {
+}
+.list__item {
+   line-height: 1.2;
+   position: relative;
+   padding-left: 30px;
+}
+.list__item::before{
+   content: "";
+   background: url(../img/li.svg) 0 0 / 100% no-repeat;
+   width: 16px;
+   height: 16px;
+   position: absolute;
+   top: 2px;
+   left: 0;
+}
+.list__item:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.list__item:hover::before{
+   left: 3px;
+}
+
+.car {
+   
+}
+.car__image {
+   position: relative;
+}
+.car__image--cabin {
+   position: relative;
+   top: 20px;
+   left: 0;
+}
+.car__image--car-body {
+   position: absolute;
+   top: 50px;
+   left: 150px;
+}
+.car__image--sand {
+   position: absolute;
+   top: 40px;
+   left: 324px;
+}
+.car__image--wing-back {
+   position: absolute;
+   top: 237px;
+   left: 287px;
+}
+.car__image--wheel-back {
+   position: absolute;
+   bottom: 23px;
+   left: 344px;
+}
+.car__image--wheel-front {
+   position: absolute;
+   top: 284px;
+   left: 95px;
+}
